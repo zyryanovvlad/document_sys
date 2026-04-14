@@ -1,0 +1,5 @@
+[server]
+headless = false
+
+[ui]
+window_title = "Документооборот (мини 1С)"

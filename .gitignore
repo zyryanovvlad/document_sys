@@ -1,0 +1,19 @@
+﻿# PyInstaller
+dist/
+build/
+*.spec
+*.pyz
+
+# Виртуальное окружение
+venv/
+__pycache__/
+*.pyc
+
+# Временные файлы
+temp/
+data.db
+*.log
+
+# Системные
+.DS_Store
+Thumbs.db
