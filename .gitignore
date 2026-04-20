@@ -1,19 +1,75 @@
-﻿# PyInstaller
-dist/
-build/
-*.spec
-*.pyz
-
-# Виртуальное окружение
-venv/
+﻿# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# Базы данных
+*.db
+*.sqlite
+*.sqlite3
 
 # Временные файлы
 temp/
-data.db
+*.tmp
+*.temp
 *.log
+*.cache
 
-# Системные
+# Документы (сгенерированные)
+invoice.docx
+output.pdf
+filled_invoice*.xlsx
+*.xlsx
+!24044.xlsx  # Исключаем только шаблон
+!*.xlsx  # Если хотите сохранить все Excel файлы, раскомментируйте
+
+# Изображения (если не нужно в репозитории)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 .DS_Store
-Thumbs.db
+
+# Файлы конфигурации с секретами
+*.env
+*.key
+*.pem
+secrets.py
+config.py
+
+# Отчеты и логи
+*.log
+*.xml
+*.html
+coverage/
+htmlcov/
+
+# EasyOCR модели (очень тяжёлые!)
+.easyocr/
+~/ .EasyOCR/  # Модели EasyOCR (могут весить >500MB)
+
+# Файлы проекта (если нужно исключить)
+*.pyc
+*.pyo
+*.pyd
